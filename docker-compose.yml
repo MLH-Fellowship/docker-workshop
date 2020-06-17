@@ -2,7 +2,7 @@
 version: '3'
 services:
   docker-workshop:
-    image: docker-workshop:0.1.0
+    image: docker-workshop:0.1.1
     build:
       context: .
     container_name: docker-workshop
