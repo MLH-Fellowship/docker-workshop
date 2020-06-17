@@ -1,5 +1,5 @@
 
-MLH_VERSION=0.1.2
+MLH_VERSION=0.1.3
 CURR_BRANCH=$(shell git branch --show-current)
 
 version: mlh_version

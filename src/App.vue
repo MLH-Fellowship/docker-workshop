@@ -1,17 +1,23 @@
 <template>
   <div id="app">
+    Version: v{{ version }}
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+let version = require("../package.json").version
 
 export default {
+  data() {
+    return {
+      version: version,
+    };
+  },
+
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
